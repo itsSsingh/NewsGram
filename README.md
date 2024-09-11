@@ -9,4 +9,5 @@ HTML
 CSS
 JS
 
-1) HTML - 
+1) HTML - HTML Stand for Hypertext markup Lnaguage. This is  markup language used for designing the front end of the system.
+2) CSS - CSS stands for Cascading Style Sheet . The CSS is used for designing the frontend of the system . 
