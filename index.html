@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWSGRAM- Get Latest Global News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/app/Screenshot__87_-removebg-preview.png" type="image/png">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="/app/Screenshot__87_-removebg-preview.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="startup" onclick="onNavItemClick('startup')">StartUp</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                    <li class="hover-link nav-item" id="fashion" onclick="onNavItemClick('fashion')">Fashion</li>
+                    <li class="hover-link nav-item" id="health" onclick="onNavItemClick('health')">Health</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. trending">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+    <hr><hr>
+
+    <!-- Footer section -->
+
+  <footer id="footer">
+    <div class="main-content">
+      <div class="left box">
+        <h2>About us</h2>
+        <div class="content">
+          <p>NEWSGRAM is an Online News Website Created by NEWSGRAM Media Pvt Ltd where we give the latest news
+        on Tech , Startup,Finance , Fashion , Health and managed by NEWSGRAM Media Pvt Ltd.</p>
+        Launched in <b>2024</b> .</p>
+        <!-- <a href="http://127.0.0.1:5501/NewsGram/index.html"></a> -->
+          <div class="social">
+            <a href="https://instagram.com/iamsatyam_rajput"><span class="fab fa-instagram"></span></a>
+            <a href="https://linkedin.com/in/engineer-satyam-singh"><span class="fab fa-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="center box">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">Pune , Maharashtra</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">(+91) 1111111112</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">NewsGrammedia@gmail.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="right box">
+        <h2>Contact us</h2>
+        <div class="content">
+          <form action="https://formspree.io/f/moqovdoo" method="POST">
+            <div class="email">
+              <div class="text">Email *</div>
+              <input type="email" name="field" required>
+            </div>
+            <div class="msg">
+              <div class="text">Message *</div>
+              <textarea rows="2" cols="25" name="field" required></textarea>
+            </div>
+            <div class="btn">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+        <hr><hr>
+      <center>
+        <span class="credit">Created By <a href="">NEWSGRAM Media</a> |
+        </span>
+        <span class="far fa-copyright"></span><span> 2024 | All rights reserved.</span>
+      </center>
+      <a href="https:feji.us/zqebvj">Visit Site</a>
+    </div>
+  </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
